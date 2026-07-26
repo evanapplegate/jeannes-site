@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jeanne Applegate</title>
+<link rel="icon" href="assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #6e7c93 url('assets/cover.jpg') center / cover no-repeat fixed;
+  }
+  .scrim {
+    min-height: 100%;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0) 55%);
+  }
+  .bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding: 40px 50px;
+  }
+  h1 { color: #fff; margin: 0; font-weight: 700; font-size: 36px; line-height: 1.15em; }
+  .sub { color: #fff; font-weight: 500; font-size: 18px; letter-spacing: .01em; margin-top: 8px; }
+  .enter {
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 34px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .15s, color .15s;
+  }
+  .enter:hover { background: #fff; color: #000; }
+  @media (max-width: 600px) {
+    body { background-attachment: scroll; }
+    .bar { flex-direction: column; align-items: flex-start; padding: 30px 24px 40px; }
+    h1 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+  <div class="scrim">
+    <div class="bar">
+      <div>
+        <h1>JEANNE APPLEGATE</h1>
+        <div class="sub">FILM EDITOR</div>
+      </div>
+      <a class="enter" href="about-contact.html">Enter</a>
+    </div>
+  </div>
+</body>
+</html>
