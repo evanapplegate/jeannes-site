@@ -21,54 +21,41 @@ body {
 }
 
 #canvas {
-  max-width: 1200px;
+  max-width: 1248px;
   margin: 0 auto;
-  padding: 30px 55px 55px;
+  padding: 48px 24px 55px;
 }
 
-/* header */
-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1em; padding: 25px 0 12px; }
-.logo { margin: 0; font-size: 36px; font-weight: 400; text-transform: uppercase; letter-spacing: 4.54px; line-height: 1.2em; }
-.logo a { color: #404296; text-decoration: none; }
-.logo a:hover { color: #3d3d3d; }
-.logo-subtitle { font-size: 19px; letter-spacing: 3.45px; color: #2f3065; margin-top: .2em; }
-
-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1.2em; }
-nav a { font-size: 19px; text-transform: uppercase; letter-spacing: .95px; line-height: 1.26em; color: #999; text-decoration: none; }
-nav a:hover { color: #111; }
-nav a.active { color: #2f3065; }
-
-.page-divider { border-bottom: 4px dotted #2f3065; }
-
-/* content */
-main { padding: 24px 0; }
-h1, h2, h3 { font-weight: 400; margin: 1em 0 .5em; }
-h2 { font-size: 1.6em; text-transform: uppercase; line-height: 1.2em; }
-h3 { font-size: 1.2em; line-height: 1.32em; }
+h2, h3 { font-weight: 400; }
+h2 { font-size: 1.6em; text-transform: uppercase; line-height: 1.2em; margin: 1em 0 .5em; }
+h3 { font-size: 1.2em; line-height: 1.32em; margin: 1em 0 .5em; }
 p { margin: 0 0 1em; }
-main a { color: #0085bd; text-decoration: none; border-bottom: 1px solid rgba(17,17,17,.2); }
+strong { font-weight: 400; }
+
+main a { color: #111; text-decoration: none; border-bottom: 1px solid rgba(17,17,17,.2); }
 main a:hover { border-color: #444; }
 
-.two-col { display: flex; gap: 4%; }
-.col-main { width: 58%; }
-.col-side { width: 38%; }
+.two-col { display: flex; gap: 3.33%; }
+.col-main { width: 56.67%; }
+.col-side { width: 40%; margin-top: 663px; }
 
 /* form */
-form label { display: block; margin: 1em 0 .3em; text-transform: uppercase; letter-spacing: .5px; }
+form label { display: block; margin: 1.4em 0 .4em; }
+form label .req { font-size: 11px; color: #777; }
 form input, form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   font-family: inherit;
   font-size: 15px;
   border: 1px solid #ccc;
   background: #fff;
 }
-form input:focus, form textarea:focus { outline: 2px solid #2f3065; }
+form input:focus, form textarea:focus { outline: 1px solid #999; }
 form button {
-  margin-top: 1.5em;
-  padding: 12px 30px;
+  margin-top: 1.6em;
+  padding: 13px 34px;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
@@ -76,20 +63,12 @@ form button {
   border: none;
   cursor: pointer;
 }
-form button:hover { background: #2f3065; }
-
-/* hi page */
-.hi-wrap { max-width: 500px; margin: 0 auto; text-align: center; }
-.hi-wrap img { max-width: 100%; height: auto; display: block; margin: 0 auto 1.5em; }
+form button:hover { background: #444; }
 
 /* mobile */
 @media (max-width: 740px) {
-  #canvas { padding: 15px 20px 30px; }
-  header { flex-direction: column; align-items: center; text-align: center; padding-top: 15px; }
-  .logo { font-size: 26px; letter-spacing: 3px; }
-  .logo-subtitle { font-size: 16px; }
-  nav ul { justify-content: center; gap: .9em; }
-  nav a { font-size: 16px; }
+  #canvas { padding: 25px 20px 40px; }
   .two-col { flex-direction: column; }
   .col-main, .col-side { width: 100%; }
+  .col-side { margin-top: 2em; }
 }
