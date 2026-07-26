@@ -81,6 +81,22 @@
           <textarea id="message" name="message" rows="5" required></textarea>
           <button type="submit">Send</button>
         </form>
+        <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          var form = this;
+          form.querySelector('button').disabled = true;
+          fetch('https://formsubmit.co/ajax/pathtothe@gmail.com', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+          }).then(function (r) { return r.json(); }).then(function () {
+            form.outerHTML = '<p>Thanks! I&rsquo;ll be in touch.</p>';
+          }).catch(function () {
+            form.submit();
+          });
+        });
+        </script>
       </div>
     </div>
   </main>
